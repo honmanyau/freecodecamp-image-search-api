@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Free Code Camp Project—Image Search Abstraction Layer</title>
+    <meta name="Honman Yau" content="This page was created in fulfilment of the Image Search Abstraction Layer project of the Free Code Camp Curriculum.">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 class="text-center">
+          Image Search API
+        </h1>
+      </header>
+      
+      <section class="text-center">
+        <p>
+          This simple image search API utilises Google Custom Search Engine to return results for images related to a search phrase provided by the user, as shown in the first example API call below.  The results returned are similar to performing a regular image search through Google, with the exception that strict safe search is applied.
+        </p>
+       <p>
+          In addition to the image search API, search phrases are stored in a database and the 10 most popular search phrases that have been passed through the API can be retrieved using the second example API call.
+        </p>
+        <h3>
+          Example API Calls:
+        </h3>
+        <code>https://honmanyau-fcc-image-search-api.glitch.me/api?q=Nyancat&page=1</code>
+        <code>https://honmanyau-fcc-image-search-api.glitch.me/top</code>
+        <h3>
+          Example Output:
+        </h3>
+        <code>
+          {"page": 1, "results": [{"url": "http://www.nyan.cat/cats/original.gif", "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaQiNJHvglVv1MdU1hz8FhUDss7_q9WGM9BjgXQ7kI0fksdEF-nidWPQ", "snippet": "NYAN.CAT!", "context": "http://www.nyan.cat/"}, {/* Result 2*/}, {/* Result 3 */}, ...]}
+        </code>
+      </section>
+      
+      <section class="text-center">
+        <h3>
+          In-browser Implementation:
+        </h3>
+        <form id="shortener-form">
+          <div><input type="text" placeholder="Example: http://www.lithe.co" class="text-center" id="input-text" /><input type="text" value="1" class="text-center" id="input-page" /></div>
+          <button type="submit" id="btn-submit">Search!</button>
+          <div class="text-center" id="output-area"></div>
+        </form>
+      </section>
+      
+      <footer class="row">
+        <p>
+          <a href="#"><i class="fa fa-twitter"></i></a>&nbsp;
+          <a href="#"><i class="fa fa-facebook-official"></i></a>&nbsp;
+          <a href="#"><i class="fa fa-google-plus-official"></i></a>&nbsp;
+          <a href="#"><i class="fa fa-linkedin"></i></a>&nbsp;
+          <a href="#"><i class="fa fa-github"></i></a>&nbsp;
+          <a href="#"><i class="fa fa-codepen"></i></a>&nbsp;
+          <a href="#"><i class="fa fa-envelope-o"></i></a>
+        </p>
+        <p>This page was created in fulfilment of the Image Search Abstraction Layer project of the Free Code Camp Curriculum</p>
+      </footer>
+    </main>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
+

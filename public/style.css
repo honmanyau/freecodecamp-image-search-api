@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #333;
+}
+
+main {
+  padding-top: 1rem;
+  width: 90vw;
+  max-width: 36rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+section {
+  width: 100%;
+  margin: 0.5rem 0 1rem 0;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+code{
+  margin: 0;
+  color: royalBlue;
+  font-size: 0.9em;
+}
+
+input {
+  max-width: 90vw;
+  height: 1.6rem;
+  margin: 0.1rem;
+  display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
+  border: 1px solid #CCC;
+  border-radius: 0.2rem;
+  font-size: 0.9em;
+}
+
+#input-text {
+  width: 18rem;
+}
+
+#input-page {
+  width: 2rem;
+}
+
+#output-area {
+  width: 100%;
+  margin: 0.5rem;
+}
+
+.result-container {
+  padding: 0.2rem;
+  max-width:100%;
+  word-wrap: break-word;
+}
+
+.result-container > div > p {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  margin-left: 2rem;
+  box-sizing: border-box;
+  font-size: 0.9em;
+  text-align: left;
+}
+
+.result-container:hover {
+  box-shadow: 0 0 4px 0 #777;
+}
+
+.thumbnail {
+  margin-top: 1rem;
+  height: 3rem;
+}
+
+button {
+  height: 1.6rem;
+  margin: 0.4rem;
+  padding: 0 0.5rem; 
+  font-family: 'Josefin Sans', sans-serif;
+  border: 1px solid #CCC;
+  border-radius: 0.2rem;
+  background-color: white;
+  font-size: 0.8em;
+}
+
+footer {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+footer a {
+  color: #333;
+  font-size: 2em;
+}
+
+footer a:hover {
+  color: royalBlue;
+}
+
+
